@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/lbl-repack-{{ version }}.tar.gz
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/lbl-repack-{{ version }}.tar.gz
   sha256: 2d9d89604c30795c89fba54a7ff423f868d1645ef3bf2ee53141220b409b4507
 
 build:
-  number: 5
+  number: 6
   skip: true  # [win]
   skip: true  # [py<35]
   entry_points:
